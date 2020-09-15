@@ -1,11 +1,11 @@
 Name:                apache-commons-csv
 Version:             1.5
-Release:             1
+Release:             2
 Summary:             Utilities to assist with handling of CSV files
 License:             ASL 2.0
 URL:                 https://commons.apache.org/proper/commons-csv/
 BuildArch:           noarch
-Source0:             http://www.apache.org/dist/commons/csv/source/commons-csv-%{version}-src.tar.gz
+Source0:             http://archive.apache.org/dist/commons/csv/source/commons-csv-%{version}-src.tar.gz
 BuildRequires:       maven-local mvn(commons-io:commons-io) mvn(junit:junit)
 BuildRequires:       mvn(org.apache.commons:commons-lang3)
 BuildRequires:       mvn(org.apache.commons:commons-parent:pom:)
@@ -47,5 +47,8 @@ rm src/test/java/org/apache/commons/csv/CSVPrinterTest.java
 %license LICENSE.txt NOTICE.txt
 
 %changelog
+* Mon Sep 14 2020 baizhonggui <baizhonggui@huawei.com> - 1.5-2
+- Modify source0
+
 * Sat Jul 25 2020 chengzihan <chengzihan2@huawei.com> - 1.5-1
 - Package init
