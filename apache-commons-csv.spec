@@ -1,6 +1,6 @@
 Name:                apache-commons-csv
-Version:             1.5
-Release:             2
+Version:             1.7
+Release:             1
 Summary:             Utilities to assist with handling of CSV files
 License:             ASL 2.0
 URL:                 https://commons.apache.org/proper/commons-csv/
@@ -10,6 +10,7 @@ BuildRequires:       maven-local mvn(commons-io:commons-io) mvn(junit:junit)
 BuildRequires:       mvn(org.apache.commons:commons-lang3)
 BuildRequires:       mvn(org.apache.commons:commons-parent:pom:)
 BuildRequires:       mvn(org.apache.maven.plugins:maven-antrun-plugin)
+BuildRequires:       mvn(org.mockito:mockito-all)
 
 %description
 Commons CSV was started to unify a common and simple interface for
@@ -47,6 +48,9 @@ rm src/test/java/org/apache/commons/csv/CSVPrinterTest.java
 %license LICENSE.txt NOTICE.txt
 
 %changelog
+* Tue Jan 18 2022 SimpleUpdate Robot <tc@openeuler.org> - 1.7-1
+- Upgrade to version 1.7
+
 * Mon Sep 14 2020 baizhonggui <baizhonggui@huawei.com> - 1.5-2
 - Modify source0
 
